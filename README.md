@@ -19,6 +19,8 @@ INDEX
 
   missing_numbers/ - Find missing number among two files.
 
+  revbits/ - Reverse bits of a binary number.
+
 COPYRIGHT
 ---------
 
