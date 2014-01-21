@@ -17,6 +17,8 @@ INDEX
 
   primes/ - display the first 200 prime numbers
 
+  missing_numbers/ - Find missing number among two files.
+
 COPYRIGHT
 ---------
 
