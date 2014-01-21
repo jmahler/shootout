@@ -21,6 +21,49 @@ INDEX
 
   revbits/ - Reverse bits of a binary number.
 
+METRICS
+-------
+
+There are two main metrics which can be used to gauge a
+program: speed and code size.
+
+To measure how fast a program is the `time` command can be used.
+
+    primes/perl5$ time ./primes.pl
+    ...
+    real    0m0.019s
+    user    0m0.016s
+    sys     0m0.000s
+
+    primes/python$ time ./primes.py
+    ...
+    real    0m0.028s
+    user    0m0.024s
+    sys     0m0.000s
+
+    primes/c$ time ./primes
+    ...
+    real    0m0.002s
+    user    0m0.000s
+    sys     0m0.000s
+
+In this case Perl was slightly faster than Python.
+And C was an order of magnitude faster than both of those.
+
+To measure the code size of a program the `wc` command can be used.
+
+    primes$ wc -l perl5/primes.pl 
+    23 perl5/primes.pl
+
+    primes$ wc -l python/primes.py
+    19 python/primes.py
+
+    primes$ wc -l c/primes.c
+    31 c/primes.c
+
+Here C has the largest code size and Python the smallest.
+However for this small program they are all quite close.
+
 COPYRIGHT
 ---------
 
