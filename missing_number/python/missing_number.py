@@ -10,11 +10,10 @@ file1 = open(sys.argv[1], 'r')
 file2 = open(sys.argv[2], 'r')
 
 sum1 = 0;
-sum2 = 0;
-
 for line in file1:
     sum1 += int(line)
 
+sum2 = 0;
 for line in file2:
     sum2 += int(line)
 

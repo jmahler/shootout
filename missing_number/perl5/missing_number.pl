@@ -14,13 +14,12 @@ open(FILE2, "< $file2")
 	or die "open '$file2' failed: $!";
 
 my $sum1 = 0;
-my $sum2 = 0;
-
 while (my $line = <FILE1>) {
 	chomp($line);
 	$sum1 += $line;
 }
 
+my $sum2 = 0;
 while (my $line = <FILE2>) {
 	chomp($line);
 	$sum2 += $line;
