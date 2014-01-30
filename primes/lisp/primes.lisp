@@ -1,5 +1,3 @@
-#!/usr/bin/sbcl --script
-
 (defun is_prime (num &optional (test 2))
   "test whether a number is a prime or not"
   (if (>= test num)
@@ -15,5 +13,3 @@
 	(if (is_prime num)
 	  (cons num (primes (+ num 1) (- count 1)))
 	  (primes (+ num 1) count))))
-
-(print (primes 2 200))
