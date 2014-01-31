@@ -1,5 +1,3 @@
-#!/usr/bin/sbcl --script
-
 (defun fib (n)
   "Fibonacci number, sum of previous two numbers in sequence"
   (if (<= n 2)
@@ -8,5 +6,3 @@
 	  1)
 	(+ (fib (- n 1))
 	   (fib (- n 2)))))
-		
-(print (fib 30))
