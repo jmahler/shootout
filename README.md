@@ -24,6 +24,8 @@ INDEX
 
   revbits/ - Reverse bits of a binary number.
 
+  fibonacci/ - Find nth Fibonacci number.
+
 METRICS
 -------
 
