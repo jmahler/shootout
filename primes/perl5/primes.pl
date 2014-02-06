@@ -1,9 +1,14 @@
 #!/usr/bin/perl
+use strict;
 
-my $max = 200;  # number of primes to find
-my $num = 2;
+if (2 != @ARGV) {
+	die("usage: $0 <start> <n>\n");
+}
+
+my $num = shift @ARGV;  # number to start from
+my $max = shift @ARGV;  # number of primes to find
+
 my $count = 0;
-
 while ($count < $max) {
 
 	my $found = 1;  # default, found=true

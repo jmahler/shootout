@@ -1,14 +1,23 @@
 
 #include <stdio.h>
+#include <stdlib.h>
 
-int main() {
+int main(int argc, char* argv[]) {
 
-	unsigned int max = 200;
-	unsigned int num = 2;
-	unsigned int count = 0;
+	unsigned int max;
+	unsigned int num;
+	unsigned int count;
 	unsigned int i;
 	unsigned char found;
 
+	if (3 != argc) {
+		fprintf(stderr, "usage: %s <start> <n>\n", argv[0]);
+		return 1;
+	}
+	num = atoi(argv[1]);
+	max = atoi(argv[2]);
+
+	count = 0;
 	while (count < max) {
 		found = 1;  // default, found=true
 

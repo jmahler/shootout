@@ -1,9 +1,14 @@
-#!/usr/bin/octave --silent
+#!/usr/bin/octave -qf
 
-max = 200;
-num = 2;
+if (2 != length(argv()))
+	printf('usage: %s <start> <n>', program_name());
+	exit(1);
+endif
+
+num = str2num(argv(){1});
+max = str2num(argv(){2});
+
 count = 0;
-
 while count < max
 	found = 1;
 	for i = 2:(num - 1)

@@ -27,15 +27,15 @@ The 'run_comp.lisp' and 'run_intr.lisp' scripts will run
 the compiled version or the interpreted version respectively.
 The compiled version is faster as expected.
 
-    $ time ./run_intr.lisp
+    $ time ./run_intr.lisp 2 200
     ...
-    real    0m0.018s
+    real    0m0.020s
     user    0m0.016s
     sys     0m0.000s
 
-    $ time ./run_comp.lisp
+    $ time ./run_comp.lisp 2 200
     ...
-    real    0m0.009s
-    user    0m0.004s
+    real    0m0.014s
+    user    0m0.008s
     sys     0m0.004s
 
