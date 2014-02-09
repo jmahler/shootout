@@ -26,6 +26,8 @@ INDEX
 
   fibonacci/ - Find nth Fibonacci number.
 
+  flock/ - File locking.
+
 METRICS
 -------
 
