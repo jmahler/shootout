@@ -14,18 +14,17 @@ def fibonacci(n):
     elif (n >= 1 and n <= 2):
         return 1
 
-    n = n - 2
+    n -= 2
 
     s = 0  # sum
     n1 = 1
     n2 = 1
-
     while (0 != n):
         s = n1 + n2
         n1 = n2
         n2 = s
 
-        n = n - 1
+        n -= 1
 
     return s
 
