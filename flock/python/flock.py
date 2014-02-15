@@ -23,5 +23,3 @@ fcntl.flock(fd.fileno(), fcntl.LOCK_UN)
 sys.stdout.write('done\n')
 
 fd.close()
-
-sys.exit(0)
