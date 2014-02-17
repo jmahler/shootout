@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import fcntl
 import sys
@@ -14,7 +14,7 @@ sys.stdout.flush()
 fcntl.flock(fd.fileno(), fcntl.LOCK_EX)
 sys.stdout.write('done\n')
 
-line = raw_input('Enter data: ')
+line = input('Enter data: ')
 
 fd.write(line)
 
