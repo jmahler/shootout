@@ -13,7 +13,8 @@ well as the more subjective metrics such as understandability.
 
 It was inspired by the now defunct "Great Computer Language Shootout".
 
-The current languages used are: C, Perl, Python (2 and 3), Haskell and Lisp.
+The current languages used are: C, Perl, Python (2 and 3), Haskell,
+Octave (Matlab) and Lisp.
 
 INDEX
 -----
