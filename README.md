@@ -31,6 +31,8 @@ INDEX
 
   flock/ - File locking.
 
+  inotify/ - Watch all the file operations on a file/directory.
+
 METRICS
 -------
 
