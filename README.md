@@ -27,6 +27,8 @@ INDEX
 
   revbits/ - Reverse bits of a binary number.
 
+  strcomb/ - Generate all combinations of a "string".
+
   fibonacci/ - Find nth Fibonacci number.
 
   flock/ - File locking.
