@@ -21,6 +21,8 @@ INDEX
 
   hello/ - Hello, World!
 
+  argv/ - Taking command line arguments.
+
   primes/ - Calculate the first 200 prime numbers.
 
   missing_numbers/ - Find missing number among two files.
