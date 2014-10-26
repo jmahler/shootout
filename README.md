@@ -39,6 +39,8 @@ INDEX
 
   inotify/ - Watch all the file operations on a file/directory.
 
+  endian - Detect endianess of current system.
+
 METRICS
 -------
 
