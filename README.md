@@ -23,6 +23,8 @@ INDEX
 
   argv/ - Accessing command line arguments.
 
+  getopt/ - Parsing options from command line arguments.
+
   primes/ - Calculate the first 200 prime numbers.
 
   missing_numbers/ - Find missing number among two files.
