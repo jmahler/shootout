@@ -7,9 +7,9 @@ shootout - Computer language shootout.
 DESCRIPTION
 -----------
 
-This is a collection of programming examples solved in various
-languages.  It is useful for comparing speed and code size as
-well as the more subjective metrics such as understandability.
+This is a collection of programming problems which are each solved in
+several different programming languages.  It is useful for comparing
+implementation code size, understandability and performance.
 
 It was inspired by the now defunct "Great Computer Language Shootout".
 
@@ -21,7 +21,7 @@ INDEX
 
   hello/ - Hello, World!
 
-  argv/ - Taking command line arguments.
+  argv/ - Accessing command line arguments.
 
   primes/ - Calculate the first 200 prime numbers.
 
