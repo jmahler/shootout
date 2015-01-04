@@ -14,7 +14,8 @@ implementation code size, understandability and performance.
 It was inspired by the now defunct "Great Computer Language Shootout".
 
 The current languages used are: C, Perl, Python (2 and 3), Haskell,
-Matlab (Octave), SBCL (Lisp), and Bash.
+Matlab (Octave), SBCL (Lisp), Bourne shell (sh),
+Bourne again shell (bash), and Node.js.
 
 INDEX
 -----
