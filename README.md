@@ -32,6 +32,8 @@ INDEX
 
   revbits/ - Reverse bits of a binary number.
 
+  sort/ - Sort the lines in a file.
+
   strcomb/ - Generate all combinations of a "string".
 
   fibonacci/ - Find nth Fibonacci number.
