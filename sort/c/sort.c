@@ -1,7 +1,7 @@
 
 #include "sort.h"
 
-#ifdef BUBBLE_SORT
+#if BUBBLE_SORT
 void sort(char **lines, int size)
 {
 	int i;
@@ -23,6 +23,20 @@ void sort(char **lines, int size)
 			break;
 	}
 }
+#elif INSERTION_SORT
+void sort(char **lines, int size)
+{
+	int i, j;
+
+	for (i = 1; i < size; i++) {
+		char *key = lines[i];
+
+		for (j = i - 1; j >= 0 && strcmp(lines[j], key) > 0; j--) {
+			lines[j + 1] = lines[j];
+		}
+		lines[j + 1] = key;
+	}
+}
 #else
-#error "Must choose (#define) sorting algorithm (BUBBLE_SORT)."
+#error "Must choose (#define) sorting algorithm (BUBBLE_SORT | INSERTION_SORT)."
 #endif
