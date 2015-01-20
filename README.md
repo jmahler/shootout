@@ -32,6 +32,8 @@ INDEX
 
   revbits/ - Reverse bits of a binary number.
 
+  revstring/ - Reverse a string.
+
   sort/ - Sort the lines in a file.
 
   strcomb/ - Generate all combinations of a "string".
