@@ -18,7 +18,6 @@ void revstr(char *str)
 		str[i] = str[end - i];
 		str[end - i] = tmp;
 	}
-
 }
 
 int main(int argc, char *argv[])
