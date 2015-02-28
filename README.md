@@ -46,6 +46,8 @@ INDEX
 
   endian - Detect endianess of current system.
 
+  backtrace - Generate a function call backtrace.
+
 METRICS
 -------
 
