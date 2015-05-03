@@ -64,10 +64,14 @@ struct node *depth_first_search(struct node *n, int val)
 {
 	struct node **child;
 
-	printf("(%p) %i\n", n, n->val);  /* verbose output */
+	printf("  node: %i (%p), ", n->val, n);  /* verbose output */
 
-	if (n->val == val)
+	if (n->val == val) {
+		printf("yes\n");
 		return n;
+	} else {
+		printf("no\n");
+	}
 
 	child = n->children;
 
@@ -86,7 +90,7 @@ struct node *breadth_first_search(struct node *n, int val)
 {
 	struct node **child;
 
-	printf("(%p) %i\n", n, n->val);  /* verbose output */
+	printf("  node: %i (%p)\n", n->val, n);  /* verbose output */
 
 	/* TODO */
 
