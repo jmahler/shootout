@@ -1,7 +1,7 @@
 
-all: tree.o dfs
+all: tree.o search
 
-dfs: dfs.c tree.o
+search: search.c tree.o
 	gcc -g -Wall $^ -o $@
 
 tree.o: tree.c tree.h

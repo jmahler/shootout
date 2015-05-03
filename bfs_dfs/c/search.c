@@ -5,7 +5,7 @@ int main() {
 	struct node *tmp1, *tmp2;
 	struct node *root;
 	struct node *found;
-	int search_val = 3;
+	int search_val;
 
 	/*
 	 * construct a tree
@@ -22,8 +22,17 @@ int main() {
 	tmp1 = make_node(1, tmp1, tmp2, make_node(7, NULL), NULL);
 	root = tmp1;
 
-	printf("depth first search for: %i\n", search_val);
+	search_val = 4;
+	printf("breadth first search for: %i\n", search_val);
 	found = depth_first_search(root, search_val);
+	if (found)
+		printf("node found\n");
+	else
+		printf("node not found\n");
+
+	search_val = 6;
+	printf("depth first search for: %i\n", search_val);
+	found = breadth_first_search(root, search_val);
 	if (found)
 		printf("node found\n");
 	else

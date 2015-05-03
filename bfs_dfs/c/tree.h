@@ -41,6 +41,10 @@ struct node *depth_first_search(struct node *root, int val);
 
 /*
  * Perform a breadth first search to find the node with the value.
+ *
+ *   struct node *found;
+ *
+ *   found = breadth_first_search(root, 12);
  */
 struct node *breadth_first_search(struct node *root, int val);
 
