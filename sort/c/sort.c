@@ -38,5 +38,5 @@ void sort(char **lines, int size)
 	}
 }
 #else
-#error "Must choose (#define) sorting algorithm (BUBBLE_SORT | INSERTION_SORT)."
+#error "One of the sorting algorithms must be chosen."
 #endif
