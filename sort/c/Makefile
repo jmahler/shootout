@@ -1,18 +1,23 @@
 
+CARGS=-Wall
+
 all: bubble_sort insertion_sort
 
 bubble_sort.o: sort.c sort.h
-	gcc -Wall -DBUBBLE_SORT -c $< -o $@
+	gcc $(CARGS) -DBUBBLE_SORT -c $< -o $@
 
 insertion_sort.o: sort.c sort.h
-	gcc -Wall -DINSERTION_SORT -c $< -o $@
+	gcc $(CARGS) -DINSERTION_SORT -c $< -o $@
 
-bubble_sort: main.c bubble_sort.o
-	gcc -Wall $^ -o $@
+readlines.o: readlines.c readlines.h
+	gcc $(CARGS) -c $< -o $@
 
-insertion_sort: main.c insertion_sort.o
-	gcc -Wall $^ -o $@
+bubble_sort: main.c bubble_sort.o readlines.o
+	gcc $(CARGS) $^ -o $@
+
+insertion_sort: main.c insertion_sort.o readlines.o
+	gcc $(CARGS) $^ -o $@
 
 clean:
-	-rm -f sort
+	-rm -f bubble_sort insertion_sort
 	-rm -f *.o
