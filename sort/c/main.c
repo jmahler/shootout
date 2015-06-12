@@ -16,10 +16,8 @@ int main()
 		exit(EXIT_FAILURE);
 	}
 
-	/* sort the lines */
 	sort(lines, num_lines);
 
-	/* print the sorted lines */
 	for (i = 0; i < num_lines; i++) {
 		printf("%s", lines[i]);
 	}
