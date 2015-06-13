@@ -4,24 +4,21 @@
 #if BUBBLE_SORT
 void sort(char **lines, size_t size)
 {
-	int i;
+	unsigned int i;
+	char change;
 	char *tmp;
-	int no_change;
 
-	while (1) {
-		no_change = 1;
+	do {
+		change = 0;
 		for (i = 1; i < size; i++) {
 			if (strcmp(lines[i - 1], lines[i]) > 0) {
-				no_change = 0;
-
+				change = 1;
 				tmp = lines[i];
 				lines[i] = lines[i - 1];
 				lines[i - 1] = tmp;
 			}
 		}
-		if (no_change)
-			break;
-	}
+	} while (change);
 }
 #elif INSERTION_SORT
 void sort(char **lines, size_t size)
