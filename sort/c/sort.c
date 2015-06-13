@@ -2,7 +2,7 @@
 #include "sort.h"
 
 #if BUBBLE_SORT
-void sort(char **lines, int size)
+void sort(char **lines, size_t size)
 {
 	int i;
 	char *tmp;
@@ -24,7 +24,7 @@ void sort(char **lines, int size)
 	}
 }
 #elif INSERTION_SORT
-void sort(char **lines, int size)
+void sort(char **lines, size_t size)
 {
 	unsigned int i, j;
 

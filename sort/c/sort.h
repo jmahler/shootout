@@ -3,6 +3,6 @@
 
 #include <string.h>
 
-void sort(char **lines, int size);
+void sort(char **lines, size_t size);
 
 #endif /* _SORT_H */
