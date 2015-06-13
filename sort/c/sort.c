@@ -26,15 +26,15 @@ void sort(char **lines, int size)
 #elif INSERTION_SORT
 void sort(char **lines, int size)
 {
-	int i, j;
+	unsigned int i, j;
 
 	for (i = 1; i < size; i++) {
 		char *key = lines[i];
 
-		for (j = i - 1; j >= 0 && strcmp(lines[j], key) > 0; j--) {
-			lines[j + 1] = lines[j];
+		for (j = i; j > 0 && strcmp(lines[j - 1], key) > 0; j--) {
+			lines[j] = lines[j - 1];
 		}
-		lines[j + 1] = key;
+		lines[j] = key;
 	}
 }
 #else
