@@ -4,7 +4,7 @@
 #if BUBBLE_SORT
 void sort(char **lines, size_t size)
 {
-	unsigned int i;
+	size_t i;
 	char change;
 	char *tmp;
 
@@ -23,7 +23,7 @@ void sort(char **lines, size_t size)
 #elif INSERTION_SORT
 void sort(char **lines, size_t size)
 {
-	unsigned int i, j;
+	size_t i, j;
 
 	for (i = 1; i < size; i++) {
 		char *key = lines[i];
