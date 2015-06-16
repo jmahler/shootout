@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
 		found = 1;  // default, found=true
 
 		for (i = 2; i < num; i++) {
-			if (0 == (num % i)) {
+			if (num % i == 0) {
 				found = 0;
 				break;
 			}
