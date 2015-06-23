@@ -37,11 +37,12 @@ int readlines(char ***lines, size_t *n, FILE *stream)
 		line = NULL;
 		ret = getline(&line, &line_n, stream);
 		if (ret == -1) {
+			free(line);
+
 			if (errno == 0)
 				break;
 
 			perror("getline");
-			free(line);
 			goto err;
 		}
 		(*lines)[lines_idx++] = line;
