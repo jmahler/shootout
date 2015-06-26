@@ -1,5 +1,5 @@
-#ifndef GRAPH_H
-#define GRAPH_H
+#ifndef TREE_H
+#define TREE_H
 
 #include <stdarg.h>
 #include <stdio.h>
@@ -48,4 +48,4 @@ struct node *depth_first_search(struct node *root, int val);
  */
 struct node *breadth_first_search(struct node *root, int val);
 
-#endif /* GRAPH_H */
+#endif /* TREE_H */
