@@ -35,15 +35,13 @@ struct node *depth_first_search(struct node *n, int val)
 	if (n == NULL)
 		return NULL;
 
-	printf("  node: %i (%p), match? ", n->val, n);  /* verbose output */
+#ifdef VERBOSE
+	printf("  node: %i (%p), match? %s\n",
+				n->val, n, (n->val == val) ? "yes" : "no");
+#endif
 
-	if (n->val == val) {
-		printf("yes\n");
+	if (n->val == val)
 		return n;
-	} else {
-		printf("no\n");
-	}
-
 
 	found = depth_first_search(n->left, val);
 	if (found != NULL)
