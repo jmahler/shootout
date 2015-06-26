@@ -30,7 +30,6 @@ int main() {
 	else
 		printf("node not found\n");
 
-	/*
 	search_val = 7;
 	printf("breadth first search for: %i\n", search_val);
 	found = breadth_first_search(root, search_val);
@@ -38,7 +37,6 @@ int main() {
 		printf("node found\n");
 	else
 		printf("node not found\n");
-	*/
 
 	free_tree(root);
 

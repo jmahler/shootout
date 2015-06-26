@@ -1,5 +1,6 @@
 
 #include "tree.h"
+#include "queue.h"
 
 struct node* make_node(int val, struct node *left, struct node *right)
 {
@@ -56,7 +57,28 @@ struct node *depth_first_search(struct node *n, int val)
 
 struct node *breadth_first_search(struct node *n, int val)
 {
-	/* TODO */
+	struct queue q = {0};
 
-	return NULL;
+	queue_push(&q, n);
+
+	while ( (n = queue_shift(&q))) {
+
+#ifdef VERBOSE
+		printf("  node: %i (%p), match? %s\n",
+				n->val, n, (n->val == val) ? "yes" : "no");
+#endif
+
+		if (n->val == val)
+			break;
+
+		if (n->left != NULL)
+			queue_push(&q, n->left);
+
+		if (n->right != NULL)
+			queue_push(&q, n->right);
+	}
+
+	flush_queue(&q);
+
+	return n;
 }

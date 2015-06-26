@@ -1,13 +1,17 @@
 
 CFLAGS = -Wall
 
-all: tree.o search
+all: search
 
-search: main.c tree.o
+search: main.c tree.o queue.o
 	gcc $(CFLAGS) $^ -o $@
 
 tree.o: tree.c tree.h
 	gcc $(CFLAGS) -DVERBOSE -c $< -o $@
 
+queue.o: queue.c queue.h
+	gcc $(CFLAGS) -c $< -o $@
+
 clean:
-	-rm -f tree.o dfs search
+	-rm -f *.o
+	-rm -f search
