@@ -1,11 +1,13 @@
 
+CFLAGS = -g -Wall
+
 all: tree.o search
 
 search: main.c tree.o
-	gcc -g -Wall $^ -o $@
+	gcc $(CFLAGS) $^ -o $@
 
 tree.o: tree.c tree.h
-	gcc -g -Wall -c $< -o $@
+	gcc $(CFLAGS) -c $< -o $@
 
 clean:
-	-rm -f tree.o dfs
+	-rm -f tree.o dfs search
