@@ -23,7 +23,7 @@ int main() {
 	root = tmp1;
 
 	search_val = 7;
-	printf("breadth first search for: %i\n", search_val);
+	printf("depth first search for: %i\n", search_val);
 	found = depth_first_search(root, search_val);
 	if (found)
 		printf("node found\n");
@@ -31,7 +31,7 @@ int main() {
 		printf("node not found\n");
 
 	search_val = 7;
-	printf("depth first search for: %i\n", search_val);
+	printf("breadth first search for: %i\n", search_val);
 	found = breadth_first_search(root, search_val);
 	if (found)
 		printf("node found\n");
