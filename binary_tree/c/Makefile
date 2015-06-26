@@ -1,5 +1,5 @@
 
-CFLAGS = -g -Wall
+CFLAGS = -Wall
 
 all: tree.o search
 
