@@ -48,7 +48,7 @@ INDEX
 
   backtrace - Generate a function call backtrace.
 
-  bfs_dfs - Breadth first and depth first searches.
+  binary_tree - Search of unordered binary trees.
 
 METRICS
 -------

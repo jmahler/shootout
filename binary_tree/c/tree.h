@@ -7,21 +7,22 @@
 
 struct node {
 	int val;
-	struct node **children;
+	struct node *left;
+	struct node *right;
 };
 
 /*
- * struct node *node_1 = make_node(1, NULL);
- * struct node *node_7 = make_node(7, NULL);
- * struct node *node_5;
+ * Make a new node and build a tree.
  *
- * node_5 = make_node(5, node_1, node_7, NULL);
+ * struct node *node_1 = make_node(1, NULL, NULL);
+ * struct node *node_7 = make_node(7, NULL, NULL);
+ * struct node *node_5 = make_node(5, node_1, node_7);
  *
  *     5
  *    / \
  *   1   7
  */
-struct node *make_node(int val, ...);
+struct node *make_node(int val, struct node *left, struct node *right);
 
 /*
  * Free a tree structure and all of its children.
