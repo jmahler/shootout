@@ -50,6 +50,8 @@ INDEX
 
   binary_tree - Search of unordered binary trees.
 
+  web_server - A simple "Hello, World!" web server.
+
 METRICS
 -------
 
