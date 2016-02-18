@@ -52,6 +52,8 @@ INDEX
 
   web_server - A simple "Hello, World!" web server.
 
+  count-char - Count the number of characters in a file.
+
 METRICS
 -------
 
