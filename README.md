@@ -54,6 +54,8 @@ INDEX
 
   count-char - Count the number of characters in a file.
 
+  echo - Echo client/server.
+
 METRICS
 -------
 
