@@ -7,12 +7,12 @@
 #define NUM_VALID_CHARS VALID_CHAR_END - VALID_CHAR_START + 1
 /* +1 for inclusive char range */
 #define OTHER_CHAR NUM_VALID_CHARS
-/* count of other chars is at the end */
+#define NUM_CHARS NUM_VALID_CHARS + 1  /* valid chars +1 other/invalid chars */
 
 int main(int argc, char *argv[]) {
 
 	char c;
-	int cs[NUM_VALID_CHARS + 1] = { 0 };
+	int cs[NUM_CHARS] = { 0 };
 	/* +1 for other characters */
 
 	/* count all the characters */
