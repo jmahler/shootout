@@ -6,7 +6,8 @@
 #define VALID_CHAR_END 126
 #define NUM_VALID_CHARS VALID_CHAR_END - VALID_CHAR_START + 1
 /* +1 for inclusive char range */
-#define OTHER_CHAR NUM_VALID_CHARS
+#define OTHER_CHAR_IDX NUM_VALID_CHARS
+#define OTHER_CHAR 0
 #define NUM_CHARS NUM_VALID_CHARS + 1  /* valid chars +1 other/invalid chars */
 
 struct char_count {
@@ -35,17 +36,20 @@ int main(int argc, char *argv[]) {
 		if (c >= VALID_CHAR_START && c <= VALID_CHAR_END)
 			i = ((int) c) - VALID_CHAR_START;
 		else
-			i = OTHER_CHAR;  /* other */
+			i = OTHER_CHAR_IDX;
 		cs[i].n++;
 	}
 
 	/* display the results */
-	for (int i = 0; i < NUM_VALID_CHARS; i++) {
+	for (int i = 0; i < NUM_CHARS; i++) {
 		char c = cs[i].c;
 		int n = cs[i].n;
-		printf("%c %d\n", c, n);
+		if (c == OTHER_CHAR) {
+			printf("(other) %d\n", n);
+		} else {
+			printf("%c %d\n", c, n);
+		}
 	}
-	printf("(other) %d\n", cs[OTHER_CHAR].n);
 
 	return 0;
 }
