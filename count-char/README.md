@@ -11,7 +11,7 @@ Write code to read in characters from a file and print out the top
 ten most used.  Assume that the size of the file is greater than the
 amount of memory on the system.
 
-    $ cat <file> | ./count-char
+    $ cat /etc/services | ./count-char
     / 582
     a 656
     o 752
