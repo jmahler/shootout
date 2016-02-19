@@ -21,6 +21,18 @@ void init_chars(struct char_count *cs) {
 	}
 }
 
+/* insertion sort, descending */
+void sort(struct char_count *a, int N) {
+	for (int i = 1; i < N; i++) {
+		struct char_count key = a[i];
+		int j;
+		for (j = i; j > 0 && key.n > a[j - 1].n; j--) {
+			a[j] = a[j - 1];  /* right shift */
+		}
+		a[j] = key;
+	}
+}
+
 int main(int argc, char *argv[]) {
 
 	char c;
@@ -40,8 +52,10 @@ int main(int argc, char *argv[]) {
 		cs[i].n++;
 	}
 
-	/* display the results */
-	for (int i = 0; i < NUM_CHARS; i++) {
+	sort(cs, NUM_CHARS);
+
+	/* display the first 10 results */
+	for (int i = 0; i < 10; i++) {
 		char c = cs[i].c;
 		int n = cs[i].n;
 		if (c == OTHER_CHAR) {
