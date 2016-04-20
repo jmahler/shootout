@@ -56,6 +56,8 @@ INDEX
 
   echo - Echo client/server.
 
+  url-spreadsheet - Generate a spreadsheet with big urls for all OSes.
+
 METRICS
 -------
 
