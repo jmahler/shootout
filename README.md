@@ -58,6 +58,8 @@ INDEX
 
   url-spreadsheet - Generate a spreadsheet with big urls for all OSes.
 
+  rm-dirs - Remove all directories except the n newest.
+
 METRICS
 -------
 
