@@ -3,7 +3,7 @@
 import sys
 
 if (len(sys.argv) != 3):
-    sys.stderr.write('usage: ' + sys.argv[0] + ' <file1> <file2>\n')
+    print('usage: ' + sys.argv[0] + ' <file1> <file2>', file=sys.stderr)
     sys.exit(1)
 
 file1 = open(sys.argv[1], 'r')

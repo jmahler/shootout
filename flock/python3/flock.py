@@ -4,7 +4,7 @@ import fcntl
 import sys
 
 if (len(sys.argv) != 2):
-    sys.stderr.write('usage: ' + sys.argv[0] + ' <file>\n')
+    print('usage: ' + sys.argv[0] + ' <file>', file=sys.stderr)
     sys.exit(1)
 
 fd = open(sys.argv[1], 'w+')

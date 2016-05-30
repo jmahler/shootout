@@ -17,6 +17,7 @@
 # hexedit is a good program for manually inspecting the values.
 #
 
+from __future__ import print_function
 import sys
 import struct
 
@@ -40,7 +41,7 @@ def revbits(n):
     return nr
 
 if (len(sys.argv) != 3):
-    sys.stderr.write('usage: ' + sys.argv[0] + ' <in file> <out file>\n')
+    print('usage: ' + sys.argv[0] + ' <in file> <out file>', file=sys.stderr)
     sys.exit(1)
 
 infd = open(sys.argv[1], 'rb')

@@ -1,9 +1,10 @@
 #!/usr/bin/python2
 
+from __future__ import print_function
 import sys
 
 if 3 != len(sys.argv):
-    sys.stderr.write("usage: " + sys.argv[0] + " <start> <n>\n")
+    print("usage: " + sys.argv[0] + " <start> <n>", file=sys.stderr)
     sys.exit(1)
 
 num = int(sys.argv[1])
