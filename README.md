@@ -60,6 +60,8 @@ INDEX
 
   rm-dirs - Remove all directories except the n newest.
 
+  ssh_cmd - ssh to a host and run a command.
+
 METRICS
 -------
 
