@@ -24,3 +24,5 @@ ssh.connect(host)
 
 stdin, stdout, stderr = ssh.exec_command(cmd)
 print(stdout.read())
+
+ssh.close()
