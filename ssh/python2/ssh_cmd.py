@@ -7,7 +7,7 @@ import sys
 try:
     host, cmd = sys.argv[1:3]
 except:
-    print("usage: {} <host> <cmd>".format(sys.argv[0]))
+    print("usage: {} <host> <cmd>".format(sys.argv[0]), file=sys.stderr)
     sys.exit(1)
 
 ssh = paramiko.SSHClient()
