@@ -62,7 +62,7 @@ INDEX
 
   ssh_cmd - ssh to a host and run a command.
 
-  mustache - logic-free templates with Mustache
+  template - templates using Mustache, Handlebars, etc
 
 METRICS
 -------

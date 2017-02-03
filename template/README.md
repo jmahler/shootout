@@ -2,15 +2,18 @@
 NAME
 ----
 
-mustache - Mustache template examples
+template - template examples using Mustache, Handlebars, etc
 
 DESCRIPTION
 -----------
 
-Mustache [1] is a library for template substition with simple
-looping.  This example is of a family with a parent and multiple
-kids.  The template can display individual values as well as
-the multiple child values.
+There are various template libraries such as Mustache [1]
+and Handlebars.  They all work in a similar with substituting
+for {{keywords}} inside curly brackets.
+
+The following example uses Mustache [1] in Ruby for a with a parent
+multiple children.  The template can display individual values as
+well as the multiple child values.
 
   $ cd ruby/
   $ cat family.mustache 
@@ -33,7 +36,6 @@ the multiple child values.
   
     Jim
     Lisa
-
 
 REFERENCES
 ----------
