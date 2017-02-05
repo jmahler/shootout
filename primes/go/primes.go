@@ -2,35 +2,24 @@ package main
 
 import (
 	"fmt"
+	"github.com/pborman/getopt/v2"
 	"os"
-	"strconv"
 )
-
-func parse_Args() (int, int) {
-
-	if 3 != len(os.Args) {
-		fmt.Printf("usage: %v <start> <n>\n", os.Args[0])
-		os.Exit(1)
-	}
-
-	num, err := strconv.Atoi(os.Args[1])
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(2)
-	}
-
-	max, err := strconv.Atoi(os.Args[2])
-	if err != nil {
-		fmt.Println(err)
-		os.Exit(3)
-	}
-
-	return num, max
-}
 
 func main() {
 
-	num, max := parse_Args()
+	var num, max int
+	var help bool
+
+	getopt.Flag(&help, 'h', "help")
+	getopt.Flag(&num, 'n', "num")
+	getopt.Flag(&max, 'm', "max")
+	getopt.Parse()
+
+	if help {
+		getopt.PrintUsage(os.Stdout)
+		os.Exit(1)
+	}
 
 	count := 0
 	for count < max {
