@@ -5,19 +5,17 @@ import (
 	"github.com/pborman/getopt/v2"
 )
 
-var (
-	key string
-	flag bool
-)
+func main() {
 
-func init() {
+	var (
+		flag bool
+		key string
+	)
+
 	getopt.Flag(&flag, 'f', "flag")
 	getopt.Flag(&key, 'k', "key")
-}
-
-func main() {
 	getopt.Parse()
 
-	fmt.Printf("flag = %v\n", flag)
+	fmt.Printf("flag = %t\n", flag)
 	fmt.Printf(" key = '%v'\n", key)
 }
