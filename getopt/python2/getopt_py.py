@@ -29,18 +29,13 @@
 # GNU General Public License.
 # 
 
-import sys, getopt
+import argparse
 
-options, args = getopt.getopt(sys.argv[1:], "fk:")
+ap = argparse.ArgumentParser(description='Get command line arguments')
+ap.add_argument('-k', dest='key', default="")
+ap.add_argument('-f', dest='flag', action='store_true')
 
-key = ""
-flag = 0
+args = ap.parse_args()
 
-for opt, val in options:
-    if opt == '-k':
-        key = val
-    elif opt == '-f':
-        flag = 1
-
-print "flag = %i" % flag
-print " key = '%s'" % key
+print "flag = %i" % args.flag
+print " key = '%s'" % args.key
