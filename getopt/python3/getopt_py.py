@@ -2,18 +2,18 @@
 
 # NAME
 # 
-# getopt - show how to get argv options in Python
+# getopt_py - show how to get argv options in Python
 # 
 # DESCRIPTION
 # 
 # This program shows how to get either a flag option or a key/value pair
 # from argv.  The value of the arguments are printed as the result.
 # 
-#   $ getopt -f -k abc
+#   $ getopt_py -f -k abc
 #   flag = 1
 #   key = 'abc'
 # 
-#   $ getopt -k abc
+#   $ getopt_py -k abc
 #   flag = 0
 #   key = 'abc'
 # 
