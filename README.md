@@ -20,49 +20,29 @@ Bourne again shell (bash), Node.js, and Awk.
 INDEX
 -----
 
-  hello/ - Hello, World!
-
-  argv/ - Accessing command line arguments.
-
-  getopt/ - Parsing options from command line arguments.
-
-  primes/ - Calculate the first 200 prime numbers.
-
-  missing_numbers/ - Find missing number among two files.
-
-  revbits/ - Reverse bits of a binary number.
-
-  revstring/ - Reverse a string.
-
-  sort/ - Sort the lines in a file.
-
-  strcomb/ - Generate all combinations of a "string".
-
-  fibonacci/ - Find nth Fibonacci number.
-
-  flock/ - File locking.
-
-  inotify/ - Watch all the file operations on a file/directory.
-
-  endian - Detect endianess of current system.
-
-  backtrace - Generate a function call backtrace.
-
-  binary_tree - Search of unordered binary trees.
-
-  web_server - A simple "Hello, World!" web server.
-
-  count-char - Count the number of characters in a file.
-
-  echo - Echo client/server.
-
-  url-spreadsheet - Generate a spreadsheet with big urls for all OSes.
-
-  rm-dirs - Remove all directories except the n newest.
-
-  ssh_cmd - ssh to a host and run a command.
-
-  template - templates using Mustache, Handlebars, etc
+* hello - Hello, World!
+* argv - Accessing command line arguments.
+* getopt - Parsing options from command line arguments.
+* primes - Calculate the first 200 prime numbers.
+* missing_numbers - Find missing number among two files.
+* revbits - Reverse bits of a binary number.
+* revstring - Reverse a string.
+* sort - Sort the lines in a file.
+* strcomb - Generate all combinations of a "string".
+* fibonacci - Find nth Fibonacci number.
+* flock - File locking.
+* inotify - Watch all the file operations on a file/directory.
+* endian - Detect endianess of current system.
+* backtrace - Generate a function call backtrace.
+* binary_tree - Search of unordered binary trees.
+* (www, sockets, web servers)
+  * web_server - A simple "Hello, World!" web server.
+  * ssh_cmd - ssh to a host and run a command.
+  * echo - Echo client/server.
+* count-char - Count the number of characters in a file.
+* url-spreadsheet - Generate a spreadsheet with big urls for all OSes.
+* rm-dirs - Remove all directories except the n newest.
+* template - templates using Mustache, Handlebars, etc
 
 METRICS
 -------
