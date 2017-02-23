@@ -36,6 +36,7 @@ INDEX
 * backtrace - Generate a function call backtrace.
 * binary_tree - Search of unordered binary trees.
 * (www, sockets, web servers)
+  * http_request_form - Request a web page with a form.
   * web_server - A simple "Hello, World!" web server.
   * ssh_cmd - ssh to a host and run a command.
   * echo - Echo client/server.
