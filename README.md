@@ -40,6 +40,7 @@ INDEX
   * web_server - A simple "Hello, World!" web server.
   * ssh_cmd - ssh to a host and run a command.
   * echo - Echo client/server.
+  * https_server - Simple HTTPS server.
 * count-char - Count the number of characters in a file.
 * url-spreadsheet - Generate a spreadsheet with big urls for all OSes.
 * rm-dirs - Remove all directories except the n newest.
