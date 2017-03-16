@@ -41,6 +41,7 @@ INDEX
   * ssh_cmd - ssh to a host and run a command.
   * echo - Echo client/server.
   * https_server - Simple HTTPS server.
+  * https_cookie_redirect - Set a cookie, redirect, and check the token.
 * count-char - Count the number of characters in a file.
 * url-spreadsheet - Generate a spreadsheet with big urls for all OSes.
 * rm-dirs - Remove all directories except the n newest.
