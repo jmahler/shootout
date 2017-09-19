@@ -1,7 +1,9 @@
 package main
 
-import "os"
-import "fmt"
+import (
+	"fmt"
+	"os"
+)
 
 func main() {
 	len_Args := len(os.Args)
