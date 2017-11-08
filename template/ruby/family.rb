@@ -3,16 +3,16 @@
 require 'mustache'
 
 class Child
+	attr_reader :name
+
 	def initialize(name)
 		@name = name
-	end
-
-	def name
-		@name
 	end
 end
 
 class Family < Mustache
+	attr_reader :name, :kids
+
 	self.template_path = __dir__  # find .mustache files in current dir
 
 	def initialize(name, kids)
@@ -23,16 +23,8 @@ class Family < Mustache
 		end
 	end
 
-	def name
-		@name
-	end
-
 	def num_kids
 		kids.length
-	end
-
-	def kids
-		@kids
 	end
 end
 
