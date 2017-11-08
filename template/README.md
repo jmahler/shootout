@@ -21,7 +21,7 @@ well as the multiple child values.
   
   I see you have {{num_kids}} kids.
   
-  There names are:
+  Their names are:
   
   {{#kids}}
     {{name}}
@@ -32,7 +32,7 @@ well as the multiple child values.
   
   I see you have 2 kids.
   
-  There names are:
+  Their names are:
   
     Jim
     Lisa
