@@ -11,12 +11,12 @@ def die_usage():
 def main():
     
     try:
-        fd = sys.stdin
+        json_data = None
         if len(sys.argv) > 1:
-            fd = open(sys.argv[1])
-
-        data = fd.read()
-        json_data = json.loads(data)
+            with open(sys.argv[1]) as fd:
+                json_data = json.loads(fd.read())
+        else:
+            json_data = json.load(sys.stdin)
 
         print(json.dumps(json_data, indent=4, sort_keys=True))
     except json.JSONDecodeError as e:
