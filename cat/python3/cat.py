@@ -11,3 +11,5 @@ if __name__ == '__main__':
 
     for line in infd:
         print(line, end='')
+
+    infd.close()
