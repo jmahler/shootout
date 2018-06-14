@@ -99,6 +99,11 @@ To measure the code size of a program the `wc` command can be used.
 
 Here C has the largest code size and Python and Lisp the smallest.
 
+REFERENCES
+----------
+
+[Python Cookbook by Brian Jones, David Beazley (2013) O'Reilly Media](http://shop.oreilly.com/product/0636920027072.do)
+
 AUTHOR
 ------
 
