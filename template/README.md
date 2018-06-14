@@ -11,7 +11,7 @@ There are various template libraries such as Mustache [1]
 and Handlebars.  They all work in a similar way by substituting
 for {{keywords}} in curly brackets.
 
-The following example uses Mustache [1] in Ruby for a parent
+The following example uses Mustache [1] in Ruby for a parent with
 multiple children.  The template can display individual values as
 well as the multiple child values.
 
