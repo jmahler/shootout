@@ -1,0 +1,4 @@
+#!/usr/bin/expect -f
+
+#send_user "Hello, World!\n"
+puts "Hello, World!"
