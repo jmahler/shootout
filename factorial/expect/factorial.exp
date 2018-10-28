@@ -1,0 +1,9 @@
+#!/usr/bin/expect -f
+
+set count [lindex $argv 0]
+
+for {set total 1} {$count > 0} {incr count -1} {
+	set total [expr $total * $count]
+}
+
+puts "$total"
