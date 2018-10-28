@@ -15,7 +15,7 @@ It was inspired by the now defunct "Great Computer Language Shootout".
 
 The current languages used are: C, C++, Perl, Python (2 and 3),
 Ruby, Haskell, Matlab (Octave), SBCL (Lisp), Bourne shell (sh),
-Go, Bourne again shell (bash), Node.js, and Awk.
+Go, Bourne again shell (bash), Node.js, Awk, and Expect (Tcl).
 
 INDEX
 -----
