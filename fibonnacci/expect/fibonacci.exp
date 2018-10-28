@@ -1,0 +1,30 @@
+#!/usr/bin/expect -f
+
+set n [lindex $argv 0]
+
+proc fib {n} {
+
+	if {0 == $n} {
+		return 0
+	} elseif {$n >= 1 && $n <= 2} {
+		return 1
+	}
+
+	set n [incr n -2]
+
+	set n1 1
+	set n2 1
+	set sum 0
+
+	while {$n > 0} {
+		set sum [expr $n1 + $n2]
+		set n1 $n2
+		set n2 $sum
+
+		set n [incr n -1]
+	}
+
+	return $n2
+}
+
+puts "[fib $n]"
