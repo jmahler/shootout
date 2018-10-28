@@ -29,6 +29,7 @@ INDEX
 * revstring - Reverse a string.
 * sort - Sort the lines in a file.
 * strcomb - Generate all combinations of a "string".
+* factorial - Calculate the factorial.
 * fibonacci - Find nth Fibonacci number.
 * flock - File locking.
 * inotify - Watch all the file operations on a file/directory.
