@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+
+puts "$argc arguments"
+
+for {set i 0} {$i < $argc} {incr i 1} {
+	puts "$i: [lindex $argv $i]"
+}
