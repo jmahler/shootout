@@ -1,5 +1,9 @@
 #!/usr/bin/expect -f
 
+if {$argc != 1} {
+	puts "usage: $argv0 <n>"
+	exit 1
+}
 set count [lindex $argv 0]
 
 for {set total 1} {$count > 0} {incr count -1} {
