@@ -1,0 +1,18 @@
+#!/usr/bin/expect -f
+
+if { $argc != 1 } {
+	puts stderr "usage: $argv0 <file>"
+	exit 1
+}
+set file [lindex $argv 0]
+
+if [catch {open $file "r"} fd] {
+	puts "unable to open file '$file'"
+	exit 2
+}
+
+while {[gets $fd line] != -1} {
+	puts $line
+}
+
+close $fd
